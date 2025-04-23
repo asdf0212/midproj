@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		
+	</title>
+	<style type="text/css">
+		body, section, div, h1, h2, h3, p, img, a{
+			margin: 0; padding: 0;
+		}
+
+		p{
+			font-family: "Pretendard";
+			font-size: 16px; 
+			font-weight: 400;
+			text-align: justify;
+			word-break: keep-all;
+		}
+		h2{
+			font-family: "Dela Gothic One";
+			font-size: 64px;
+		}
+		h3{
+			font-family: "Dela Gothic One";
+			font-size: 24px;
+		}
+		h4{
+			font-family: "Dela Gothic One";
+			font-size: 20px;
+		}
+
+
+		@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Dela+Gothic+One&family=Noto+Serif+KR:wght@200..900&display=swap');
+        @import url('https://fonts.cdnfonts.com/css/dagestan');
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"); 
+
+        /*섹션별 클래스*/
+		.header-container{
+			position: relative;
+			background: #E59E2C;
+			height: 100vh; width: 100vw;
+
+		}
+
+		.frame{
+			justify-content: flex-end;
+			position: relative;
+			display: flex;
+			gap: 42px;
+			margin-right: 256px; margin-left: 80px;
+		}
+
+		.wrap{
+			margin: 0px 256px 0px 256px;
+			position: absolute;
+		}
+
+		.about-us{
+			height: 100vh; width: 100vw;
+			background: #ECDDC6;
+		}
+
+		/*글자 관련 클래스*/
+		.main-title{
+			position: absolute; top: 390px;
+			font-size: 150px; font-family: "Dela Gothic One", sans-serif;  font-weight: 400; font-style: normal; 
+			letter-spacing: -0.5rem;
+			line-height: 90%;
+			color: #2F333A;
+		}
+
+		.title-italic{
+			font-family: 'Dagestan', sans-serif;
+			font-size: 220px; 
+			padding-right: 40px; padding-left: 40px;
+		}
+
+		.text-wrapper{
+			width: 273px;
+			font-family: "Pretendard-Regular", Helvetica;
+			font-weight: 400;
+			color: #2f333a;
+			font-size: 16px;
+			letter-spacing: 0;
+			line-height: 24px;
+		}
+
+		.two-line-wrapper{
+			display: flex;
+			gap: 42px;
+			
+		}
+
+		.navy{
+			color:#32425F;
+		}
+
+		/*이미지 관련 클래스*/
+		.in-h1{
+			padding-right: 10px;
+			height: 110px; width: ;
+		}
+
+		.in-about{
+			width: 100vw; height: 436px;
+			margin-top: 72px;
+		}
+
+
+		/*도형 관련 클래스*/
+		.ellipse{
+			display: flex;position: absolute; width: 120px; height: 50px;
+			top: 0; left: 0;
+			background-color: #2f333a;
+			border-radius: 59.96px / 23.29px;
+			justify-content: center;
+			align-items: center;
+			color: #E59E2C;
+		}
+
+		.ellipse-nav-bar{
+			display: flex; position: relative; width: 100px; height: 38px;
+			background-color: #32425F;
+			border-radius: 59.96px / 23.29px;
+			justify-content: center;
+			align-items: center;
+			color: #ECDDC6;
+		}
+
+		/*nav bar 관련*/
+		.nav-bar{
+			position: sticky; display: flex; flex-direction: column;
+			top: 0; left: 0;
+			width: 100%;
+			background-color: rgba(236, 221, 198, 0.1) ; backdrop-filter: blur(30px);
+			z-index: 100; 
+			padding: 24px 0px 0px 0px;
+		}
+
+		.nav-container{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 1568px;
+			margin: 0 auto; padding: 16px 0px 16px;
+			border-top: 4px solid #32425F; border-bottom: 4px solid #32425F;
+		}
+
+		.nav-links{
+			padding: 0; margin: 0;
+			display: flex;
+			gap: 36px;
+			list-style: none;
+			
+		}
+
+		.nav-links a{
+			text-decoration: none;
+			color: #32425F;
+			font-size: 20px;
+		}
+
+
+		hr{
+			border: solid;
+			width: 100%;
+			margin-top: 48px; margin-bottom: 36px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="header-container">
+			<div class="frame">
+				<div class="ellipse"><h3>TTC</h3>
+				</div>
+				<span class="text-wrapper">
+					<p>TTC captures time in a capsule, bringing nostalgia back to life. Every memory deserves its taste, every scent a
+					chance to linger. We blend the past’s subtle flavors with the essence of forgotten moments, crafting capsules
+					that awaken what once was. Our vision is timeless—transforming yesterday’s scents into today’s treasures,
+					unlocking a flood of memories with every breath. Through taste and scent, we seal time’s beauty, inviting you to
+					savor an eternal dance of nostalgia.</p>
+				</span>
+				<span class="text-wrapper">
+					<p>Each capsule is a bridge to time’s quiet corners, where nostalgia whispers through taste and scent. We distillmemories into fleeting drops,preserving the warmth of a moment you thought was lost. TTC envisions a worldwhere every capsule unlocks a story—your story—blending the richness of yesterday’s flavors with thepromise of tomorrow’s rediscovery. With every taste, a memory stirs; with every scent, time bends closer, wrapping you in the tender embrace of what once was.</p>
+				</span>
+			</div>
+		</div>
+			<h1 class="main-title">TASTE <span class="title-italic">of</span> TIME, <img src="" width="230" height="110"></img> 
+				<br> CAPSULE <img src="" width="230" height="110" class="in-h1"></img> <img src="" width="230" height="110" class="in-h1"></img>
+				<br> <img src="" width="230" height="110" class="in-h1"></img> TASTE <span class="title-italic">of</span>,
+				<br> <img src="" width="230" height="110" class="in-h1"></img> TIMECAPSULE</h1>
+	 	 </div>
+	</header>
+
+  <section class="about-us">
+  	<nav class="nav-bar">
+  		<div class="nav-container">
+  		<div class="ellipse-nav-bar"><h4>TTC</h4>
+  		</div>
+  		<ul class="nav-links">
+  			<li><a href="#">About Us.</a></li>
+  			<li><a href="#">How to Taste.</a></li>
+  			<li><a href="#">Product.</a></li>
+  			<li><a href="#">Details.</a></li>
+  			<li><a href="#">Contact.</a></li>
+  		</ul>
+  		</div>
+  	</nav>
+  		<img src="" class="in-about">
+  	<div class="wrap">
+  		
+  		<h2 class="navy">About.</h2>
+  		<hr class="navy">
+  		<div class="two-line-wrapper navy">
+	  		<span>
+	  			<p>
+	  				시간의 맛 캡슐(Taste of Time Capsule)은 추억을 한 알에 담아 당신의 향수를 깨워줄 거예요. 모든 기억은 맛으로, 모든 순간은 향으로 다시 살아나요. 잊힌 시간의 맛과 향을 캡슐에 녹여, 과거를 오늘의 보물로 바꿉니다. 당신의 시간이 멈추지 않기를 바라며—캡슐 한 알의 맛과 숨결로 잊혀진 추억을 다시 열어보세요.
+	  			</p>
+	  		</span>
+	  		<span>
+	  			<p>
+	  				TTC가 제공하는 캡슐은 흘러간 시간 속 기억으로 다시 돌아가는 다리예요. 이제는 지나간 순간의 따뜻함, 애틋함, 그리고 아련함을 맛과 향에 담아 당신에게 선사해드립니다. TTC는 캡슐이 당신의 이야기를 풀어내길 꿈꿉니다—어제의 풍미와 내일의 설렘을 엮어, 그때를 다시 감싸 안아요.
+	  			</p>
+	  		</span>
+	  		
+  	</div>
+  	</div>
+  </section>
+
+
+
+
+
+</body>
+</html>
