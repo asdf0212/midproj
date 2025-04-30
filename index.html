@@ -7,6 +7,12 @@
 		
 	</title>
 	<style type="text/css">
+
+		@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Dela+Gothic+One&family=Noto+Serif+KR:wght@200..900&display=swap');
+        @import url('https://fonts.cdnfonts.com/css/dagestan');
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"); 
+		@import url('https://hangeul.naver.com/font/NanumMyeongjo');
+
 		body, section, div, h1, h2, h3, h4, h5, p, img, a{
 			margin: 0; padding: 0;
 		}
@@ -19,6 +25,7 @@
 			font-family: "Pretendard";
 			font-size: 16px; 
 			font-weight: 400;
+			color: #32425F;
 			word-break: keep-all;
 		}
 		h2{
@@ -37,15 +44,8 @@
 			font-family: "Nanum Myeongjo";
 			font-size: 36px;
 			font-weight: 600;
-			
-
 		}
 
-
-		@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Dela+Gothic+One&family=Noto+Serif+KR:wght@200..900&display=swap');
-        @import url('https://fonts.cdnfonts.com/css/dagestan');
-        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"); 
-		@import url('https://hangeul.naver.com/font/NanumMyeongjo');
 
         /*섹션별 클래스*/
 		.header-container{
@@ -118,6 +118,10 @@
 			padding-top: 1px;
 		}
 
+		.product{
+			padding-top: 128px;
+		}
+
 
 		/*글자 관련 클래스*/
 		.main-title{
@@ -149,12 +153,23 @@
 			gap: 42px;
 			text-align: left;
 		}
+		
+		.three-line-wrapper{
+			display: flex;
+			gap: 42px;
+			width: 900px;
+		}
 
 		.content-text{
 			font-size:36px; font-weight: 600;
 			color: #F3D58D;
 			margin-top: 128px;
 			
+		}
+
+		.text-mid{
+			font-size: 24px;
+			font-weight: 800;
 		}
 
 		.line-height{
@@ -196,6 +211,10 @@
 			color: #F3D58D;
 		}
 
+		.redbrown{
+			color: #8B3B08;
+		}
+
 		/*정렬, 패딩, 마진 관련 클래스*/
 
 		.align-center{
@@ -222,6 +241,10 @@
 		.in-about{
 			width: 100vw; height: 350px;
 			margin-top: 72px;
+		}
+
+		.product-img{
+			width: 270px; height: 270px;
 		}
 
 
@@ -259,7 +282,6 @@
 
 		hr{
 			border: solid;
-			width: 100%;
 			margin-top: 48px; margin-bottom: 36px;
 		}
 
@@ -316,7 +338,15 @@
 			font-size: 20px;
 		}
 
-
+		
+		.button{
+			position: relative;
+			background-color: #32425F;
+			padding: 24px 16px 24px;
+			width: 240px;
+			
+			flex-grow: 1
+		}
 
 	</style>
 </head>
@@ -363,7 +393,7 @@
 		<section class="about-us">
 			
 				<img src="" class="in-about">
-			<div class="wrap">
+			<div class="wrap" style="margin-top: 64px;">
 				
 				<h2 class="navy">About.</h2>
 				<hr class="navy">
@@ -477,14 +507,14 @@
 				<hr class="lightyellow">
 				<div class="two-line-wrapper lightyellow">
 					<span class="span-block">
-						<p class="line-height">
+						<p class="line-height lightyellow">
 							글, 동영상, 사진만 보며 간접적으로밖에 추억할 수 없었던 향수를<br>
 							이제는 나의 눈앞에서, 나의 코앞에서 생생하게<br>
 							캡슐 하나로 되새겨볼 수 있어요.
 						</p>
 					</span>
 					<span class="span-block">
-						<p class="line-height">
+						<p class="line-height lightyellow">
 							TTC로 지금 바로 그 때의 그 순간을 감각해볼까요?
 						</p>
 					</span>
@@ -503,7 +533,7 @@
 			</div>
 		</section>
 
-		<section class="how-to-taste-6">
+		<section class="how-to-taste-6" style="padding-bottom: 256px ;">
 			<div class="wrap align-center" >
 				<div>
 					<span>
@@ -567,19 +597,75 @@
 						을 더 생생하게 떠오르게 합니다.
 					</p>
 				</span>
-			</div>
 
-			<div class="wrap">
-				<p class="content-text darknavy">
-					Best Reviews
-				</p>
-				<hr class="darknavy">
-				<div>
-					
+				<div style="margin-top: 64px;" class="redbrown">
+					<p>
+					*위 성분 함량은 캡슐 1알&#40;500mg&#41; 기준입니다. <br>
+					*캡슐의 형태는 주문자의 요청에 따라 달라질 수 있으나, 모든 제품 동일한 용량을 제공합니다.  
+					</p>
 				</div>
 			</div>
 		</section>
 
+		<section class="product">
+			<div class="wrap">
+				<h2 class="navy">Product.</h2>
+				<hr class="navy">
+				<div class="two-line-wrapper" style="margin-top: 128px;">
+					<div height="600px" width="auto">
+						<p class="text-mid navy">맛보기</p>
+						<hr class="navy">
+						<p class="navy">기본적으로 제공되는 3알의 캡슐입니다.<br>
+							TTC가 엄선한, 향수를 불러일으키기에 충분<br>
+							한 시간대들을 한 번 맛보시는 건 어떨까요?
+						</p>
+
+						<div class="button">
+						<p class="yellow">구매하기</p>
+					</div>
+
+					
+					</div>
+				
+					<div>
+						<p class="text-mid navy">What's Included</p>
+						<hr class="navy">
+							<div class="three-line-wrapper">
+								<div>
+									<img src="" class="product-img" style="margin-bottom: 36px;"><br>
+									<span class="redbrown">
+										<strong>1980년대, 겨울 저녁</strong>
+									</span>
+									<p style="margin-top: 24px;">
+										<strong>할머니의 된장국 냄새와 장작 타는 따뜻함</strong>
+										해가 일찍 진 겨울 저녁, 할머니가 부엌에서 끓이던 된장국 냄새가 방 안까지 퍼지던 그때. 장작이 타닥거리며 불을 피운 화롯불 옆에서 손을 녹이며, 창문 너머로 보이던 김이 서린 유리창과 희미한 눈발.
+									</p>
+								</div>
+								<div>
+									<img src="" class="product-img" style="margin-bottom: 36px;"><br>
+									<span class="redbrown">
+										<strong>1980년대, 겨울 저녁</strong>
+									</span>
+									<p style="margin-top: 24px;">
+										<strong>할머니의 된장국 냄새와 장작 타는 따뜻함</strong>
+										해가 일찍 진 겨울 저녁, 할머니가 부엌에서 끓이던 된장국 냄새가 방 안까지 퍼지던 그때. 장작이 타닥거리며 불을 피운 화롯불 옆에서 손을 녹이며, 창문 너머로 보이던 김이 서린 유리창과 희미한 눈발.
+									</p>
+								</div>
+								<div>
+									<img src="" class="product-img" style="margin-bottom: 36px;"><br>
+									<span class="redbrown">
+										<strong>1980년대, 겨울 저녁</strong>
+									</span>
+									<p style="margin-top: 24px;">
+										<strong>할머니의 된장국 냄새와 장작 타는 따뜻함</strong>
+										해가 일찍 진 겨울 저녁, 할머니가 부엌에서 끓이던 된장국 냄새가 방 안까지 퍼지던 그때. 장작이 타닥거리며 불을 피운 화롯불 옆에서 손을 녹이며, 창문 너머로 보이던 김이 서린 유리창과 희미한 눈발.
+									</p>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		
 	</section>
 
