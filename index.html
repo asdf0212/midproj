@@ -4,355 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>
-		
+		TTC: Taste of Timecapsule
 	</title>
-	<style type="text/css">
-
-		@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Dela+Gothic+One&family=Noto+Serif+KR:wght@200..900&display=swap');
-        @import url('https://fonts.cdnfonts.com/css/dagestan');
-        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"); 
-		@import url('https://hangeul.naver.com/font/NanumMyeongjo');
-
-		body, section, div, h1, h2, h3, h4, h5, p, img, a{
-			margin: 0; padding: 0;
-		}
-
-		body{
-			background-color: #ECDDC6;
-		}
-
-		p{
-			font-family: "Pretendard";
-			font-size: 16px; 
-			font-weight: 400;
-			color: #32425F;
-			word-break: keep-all;
-		}
-		h2{
-			font-family: "Dela Gothic One";
-			font-size: 64px;
-		}
-		h3{
-			font-family: "Dela Gothic One";
-			font-size: 24px;
-		}
-		h4{
-			font-family: "Dela Gothic One";
-			font-size: 20px;
-		}
-		h5{
-			font-family: "Nanum Myeongjo";
-			font-size: 36px;
-			font-weight: 600;
-		}
-
-
-        /*섹션별 클래스*/
-		.header-container{
-			position: relative;
-			background: #E59E2C;
-			height: 100vh; width: 100vw;
-
-		}
-
-		.frame{
-			justify-content: flex-end;
-			position: relative;
-			display: flex;
-			gap: 42px;
-			margin-right: 256px; margin-left: 80px;
-		}
-
-		.wrap{
-			margin: 0px 256px 0px 256px;
-			position: relative;
-			justify-content: center;
-		}
-
-		.about-us{
-			height: calc(100vh - 102px); width: 100vw;
-			background: #ECDDC6;
-		}
-
-		.how-to-taste-1{
-			background: linear-gradient(180deg, #32425F 0%, #2F333A 100%);
-			padding-top: 256px;
-			text-align: center;
-			padding-bottom: 256px;
-		}
-
-		.how-to-taste-2{
-			display: flex;
-			flex-direction: column;
-			background-color: #2f333a;
-			text-align: center;
-			justify-content: center;
-			padding-bottom: 256px;
-		}
-
-		.how-to-taste-3{
-			display: flex;
-			flex-direction: column;
-			background-color: #2f333a;
-			text-align: left;
-			justify-content: center;
-			padding-bottom: 256px;
-		}
-
-		.how-to-taste-4{
-			display: flex;
-			flex-direction: column;
-			background-color: #2f333a;
-			text-align: left;
-			justify-content: center;
-			padding-bottom: 256px;
-		}
-
-		.how-to-taste-5{
-			background: linear-gradient(180deg, #2F333A 0%, #E59E2C 100%);
-			text-align: center;
-		}
-
-		.how-to-taste-6{
-			background: #E59E2C;
-			padding-top: 1px;
-		}
-
-		.product{
-			padding-top: 128px;
-		}
-
-
-		/*글자 관련 클래스*/
-		.main-title{
-			position: absolute; top: 390px;
-			font-size: 150px; font-family: "Dela Gothic One", sans-serif;  font-weight: 400; font-style: normal; 
-			letter-spacing: -0.5rem;
-			line-height: 90%;
-			color: #2F333A;
-		}
-
-		.title-italic{
-			font-family: 'Dagestan', sans-serif;
-			font-size: 220px; 
-			padding-right: 40px; padding-left: 40px;
-		}
-
-		.text-wrapper{
-			width: 273px;
-			font-family: "Pretendard-Regular", Helvetica;
-			font-weight: 400;
-			color: #2f333a;
-			font-size: 16px;
-			letter-spacing: 0;
-			line-height: 24px;
-		}
-
-		.two-line-wrapper{
-			display: flex;
-			gap: 42px;
-			text-align: left;
-		}
-		
-		.three-line-wrapper{
-			display: flex;
-			gap: 42px;
-			width: 900px;
-		}
-
-		.content-text{
-			font-size:36px; font-weight: 600;
-			color: #F3D58D;
-			margin-top: 128px;
-			
-		}
-
-		.text-mid{
-			font-size: 24px;
-			font-weight: 800;
-		}
-
-		.line-height{
-			line-height: 24px;
-		}
-
-		.span-block{
-			display: inline-block;
-			width: 543px;
-		}
-
-		.text-position-1{
-			position: absolute;
-			top: 650px; left: -20px;
-		}
-
-		.text-position-2{
-			position: absolute;
-			top: 1050px; left: -0px;
-		}
-
-		.text-position-3{
-			position: absolute;
-			top: 850px; left: 860px;
-		}
-
-		.navy{
-			color:#32425F;
-		}
-		
-		.darknavy{
-			color: #2F333A;
-		}
-
-		.yellow{
-			color: #E59E2C;
-		}
-		.lightyellow{
-			color: #F3D58D;
-		}
-
-		.redbrown{
-			color: #8B3B08;
-		}
-
-		/*정렬, 패딩, 마진 관련 클래스*/
-
-		.align-center{
-			text-align: center;
-			justify-content: center;
-		}
-
-		.align-right{
-			text-align: right;
-			justify-content: right;
-		}
-
-		.align-left{
-			text-align: left;
-			justify-content: left;
-		}
-
-		/*이미지 관련 클래스*/
-		.in-h1{
-			padding-right: 10px;
-			height: 110px; width: ;
-		}
-
-		.in-about{
-			width: 100vw; height: 350px;
-			margin-top: 72px;
-		}
-
-		.product-img{
-			width: 270px; height: 270px;
-		}
-
-
-		/*도형 관련 클래스*/
-		.ellipse{
-			display: flex;position: absolute; width: 120px; height: 50px;
-			top: 0; left: 0;
-			background-color: #2f333a;
-			border-radius: 50%;
-			justify-content: center;
-			align-items: center;
-			color: #E59E2C;
-		}
-
-		.ellipse-nav-bar{
-			display: flex; position: relative; width: 100px; height: 38px;
-			background-color: #32425F;
-			border-radius: 50%;
-			justify-content: center;
-			align-items: center;
-			color: #ECDDC6;
-		}
-
-		.ellipse-big{
-			display: flex; width: 300px; height: 120px;
-			left: 50%;
-			background-color: #E59E2C;
-			border-radius: 50%;
-			justify-content: center;
-			align-items: center;
-			color: #2f333a;
-			margin: auto;
-			margin-bottom: 64px;
-		}
-
-		hr{
-			border: solid;
-			margin-top: 48px; margin-bottom: 36px;
-		}
-
-		.review-image-right, .review-image-left{
-			background: #D9D9D9;
-			display: flex;
-			flex-direction: column;
-			padding: 127px 32px;
-			gap: 10px;
-			width: fill;
-			margin-top: 36px; margin-bottom: 36px;
-
-		}
-
-		.review-image-left{
-			align-items: left; text-align: left; 
-		}
-
-		.review-image-right{
-			align-items: right; text-align: right; 
-		}
-
-
-		/*nav bar 관련*/
-		.nav-bar{
-			position: sticky; display: flex; flex-direction: column;
-			top: 0; left: 0;
-			width: 100%;
-			background-color: rgba(236, 221, 198, 0.01) ; backdrop-filter: blur(30px);
-			z-index: 100; 
-			padding: 24px 0px 0px 0px;
-		}
-
-		.nav-container{
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			width: 1568px;
-			margin: 0 auto; padding: 16px 0px 16px;
-			border-top: 4px solid #32425F; border-bottom: 4px solid #32425F;
-		}
-
-		.nav-links{
-			padding: 0; margin: 0;
-			display: flex;
-			gap: 36px;
-			list-style: none;
-			
-		}
-
-		.nav-links a{
-			text-decoration: none;
-			color: #32425F;
-			font-size: 20px;
-		}
-
-		
-		.button{
-			position: relative;
-			background-color: #32425F;
-			padding: 24px 16px 24px;
-			width: 240px;
-			
-			flex-grow: 1
-		}
-
-	</style>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header>
-		<div class="header-container">
+		<div class="header-container" style="padding-top: 24px;">
 			<div class="frame">
 				<div class="ellipse"><h3>TTC</h3>
 				</div>
@@ -368,10 +26,13 @@
 				</span>
 			</div>
 		</div>
-			<h1 class="main-title">TASTE <span class="title-italic">of</span> TIME, <img src="" width="230" height="110">
-				<br> CAPSULE <img src="" width="230" height="110" class="in-h1"> <img src="" width="230" height="110" class="in-h1">
-				<br> <img src="" width="230" height="110" class="in-h1"> TASTE <span class="title-italic">of</span>,
-				<br> <img src="" width="230" height="110" class="in-h1"> TIMECAPSULE</h1>
+			<h1 class="main-title">TASTE <span class="title-italic">of</span> TIME, 
+				<img src="/Users/choeseonghui/최성희/서울과기대/2025/3학년 1학기/웹퍼블리싱/중간과제/img_source/header1.png" width="230" height="110" style="margin-left: 53px;">
+				<br> CAPSULE 
+				<img src="/Users/choeseonghui/최성희/서울과기대/2025/3학년 1학기/웹퍼블리싱/중간과제/img_source/header2.png" width="230" height="110" class="in-h1"> 
+				<img src="/Users/choeseonghui/최성희/서울과기대/2025/3학년 1학기/웹퍼블리싱/중간과제/img_source/header3.png" width="230" height="110" class="in-h1">
+				<br> <img src="/Users/choeseonghui/최성희/서울과기대/2025/3학년 1학기/웹퍼블리싱/중간과제/img_source/header4.png" width="230" height="110" class="in-h1"> TASTE <span class="title-italic">of</span>,
+				<br> <img src="/Users/choeseonghui/최성희/서울과기대/2025/3학년 1학기/웹퍼블리싱/중간과제/img_source/header5.png" width="230" height="110" class="in-h1"> TIMECAPSULE</h1>
 	 	 </div>
 	</header>
 
@@ -381,29 +42,29 @@
 			<div class="ellipse-nav-bar"><h4>TTC</h4>
 			</div>
 			<ul class="nav-links">
-				<li><a href="#">About Us.</a></li>
-				<li><a href="#">How to Taste.</a></li>
-				<li><a href="#">Product.</a></li>
-				<li><a href="#">Details.</a></li>
-				<li><a href="#">Contact.</a></li>
+				<li><a href="#about-us">About Us.</a></li>
+				<li><a href="#how-to-taste">How to Taste.</a></li>
+				<li><a href="#product">Product.</a></li>
+				<li><a href="#details">Details.</a></li>
+				<li><a href="#contact">Contact.</a></li>
 			</ul>
 			</div>
 		</nav>
 
-		<section class="about-us">
+		<section class="about-us" id="about-us">
 			
-				<img src="" class="in-about">
-			<div class="wrap" style="margin-top: 64px;">
+				<img src="/Users/choeseonghui/최성희/서울과기대/2025/3학년 1학기/웹퍼블리싱/중간과제/img_source/about2.png" class="in-about">
+			<div class="wrap fade-up" style="margin-top: 64px;">
 				
-				<h2 class="navy">About.</h2>
+				<h2 class="navy">About Us.</h2>
 				<hr class="navy">
 				<div class="two-line-wrapper navy">
-					<span>
+					<span class="span-block">
 						<p class="line-height">
 							시간의 맛 캡슐(Taste of Time Capsule)은 추억을 한 알에 담아 당신의 향수를 깨워줄 거예요. 모든 기억은 맛으로, 모든 순간은 향으로 다시 살아나요. 잊힌 시간의 맛과 향을 캡슐에 녹여, 과거를 오늘의 보물로 바꿉니다. 당신의 시간이 멈추지 않기를 바라며—캡슐 한 알의 맛과 숨결로 잊혀진 추억을 다시 열어보세요.
 						</p>
 					</span>
-					<span>
+					<span class="span-block">
 						<p class="line-height">
 							TTC가 제공하는 캡슐은 흘러간 시간 속 기억으로 다시 돌아가는 다리예요. 이제는 지나간 순간의 따뜻함, 애틋함, 그리고 아련함을 맛과 향에 담아 당신에게 선사해드립니다. TTC는 캡슐이 당신의 이야기를 풀어내길 꿈꿉니다—어제의 풍미와 내일의 설렘을 엮어, 그때를 다시 감싸 안아요.
 						</p>
@@ -413,65 +74,65 @@
 			</div>
 		</section>
 
-		<section class="how-to-taste-1">
+		<section class="how-to-taste-1" id="how-to-taste">
 			
 			<div class="wrap">
-				<h2 class="lightyellow">How to Taste.</h2>
-				<hr class="lightyellow">
+				<h2 class="lightyellow fade-up">How to Taste.</h2>
+				<hr class="lightyellow fade-up">
 				<span>
-					<p class="content-text" style="padding-bottom: 112px">
+					<p class="content-text fade-up" style="padding-bottom: 112px">
 					다시 떠올리고 싶은 소중한 순간이 있지 않나요?
 					</p>
 				</span>
 				
-				<div >
-					<div class="review-image-left">
+				<div>
+					<div class="review-image-left how-to-taste-img1 fade-up-left" >
 						<span>
-							<h5>
+							<h5 class="yellow">
 								“캡슐 하나로 살아나는 과거의 감각”
 							</h5>
 						</span>
 						<span>
-							<p>
+							<p class="yellow">
 								이준호 연구원(감각 경험 디자이너, 글로벌 UX 랩 소장)
 							</p>
 						</span>
 					</div>
 
-					<div class="review-image-right">
+					<div class="review-image-right how-to-taste-img2 fade-up-right">
 						<span>
-							<h5>
+							<h5 class="yellow">
 								“TTC, 맛과 향으로 기억을 재구성하다”
 							</h5>
 						</span>
 						<span>
-							<p>
+							<p class="yellow">
 								김희연 박사 (기억 심리학 전문가, 서울대 교수)
 							</p>
 						</span>
 					</div>
 
-					<div class="review-image-left">
+					<div class="review-image-left how-to-taste-img3 fade-up-left">
 						<span>
-							<h5>
+							<h5 class="yellow">
 								“TTC로 맛보는 2000년대의 추억, 감성 폭발!”
 							</h5>
 						</span>
 						<span>
-							<p>
+							<p class="yellow">
 								최윤재 디렉터 (감성 콘텐츠 크리에이터, 100만 유튜버)
 							</p>
 						</span>
 					</div>
 
-					<div class="review-image-right">
+					<div class="review-image-right how-to-taste-img4 fade-up-right">
 						<span>
-							<h5>
-								캡슐로 맛보는 최고의 아로마 경험
+							<h5 class="yellow">
+								캡슐 하나가 선사하는 최고의 아로마 경험
 							</h5>
 						</span>
 						<span>
-							<p>
+							<p class="yellow">
 								한지민 박사 (향기 테라피 전문가, 국제 아로마 협회 이사)
 							</p>
 						</span>
@@ -481,16 +142,18 @@
 		</section>
 
 		<section class="how-to-taste-2">
-			<div class="wrap">
+			<div class="wrap fade-in">
 				<div class="ellipse-big"><h2>TTC</h2></div>
 				<h2 class="yellow">Taste of Time Capsule</h2>
 			</div>
 		</section>
 
-		<img src="" width="1728px" height="875px">
+		<section style="background-color: #2f333a;">
+		<img src="/Users/choeseonghui/최성희/서울과기대/2025/3학년 1학기/웹퍼블리싱/중간과제/img_source/tasteoftimecapsule.png" width="1728px" height="875px" class="fade-up">
+		</section>
 
 		<section class="how-to-taste-3">
-			<div class="wrap">
+			<div class="wrap fade-up">
 				<div class="two-line-wrapper">
 					
 						<p class="content-text span-block lightyellow">
@@ -524,12 +187,134 @@
 		</section>
 
 		<section class="how-to-taste-4">
-			~제작중~
+			<div class="wrap">
+				<input type="radio" name="step" id="step1" checked>
+				<input type="radio" name="step" id="step2">
+				<input type="radio" name="step" id="step3">
+			  
+				<div class="tabs">
+				  <label for="step1" class="content-text">STEP 1.<hr></label>
+				  <label for="step2" class="content-text">STEP 2.<hr></label>
+				  <label for="step3" class="content-text">STEP 3.<hr></label>
+				</div>
+			  
+				<div class="contents">
+					<div class="content" id="content1">
+						<div class="caption">
+							<h3>추억하고 싶은 시간을 떠올려주세요.</h3>
+							<p style="margin-top: 16px; text-align: justify;" class="lightyellow line-height">TTC의 첫 번째 단계는 당신이 <strong>다시 떠올리고 싶은 순간을 선택하는 과정</strong>이에요. 
+									어린 시절의 여름 방학, 첫사랑과 보냈던 가을 저녁, 가족과 함께한 따뜻한 겨울 
+									등 원하는 시간대를 입력해주세요. 예를 들어, "1997년 여름 캠핑"처럼 구체적인 
+									순간을 적어주시면 더욱 생생한 캡슐이 완성됩니다. 이 단계에서 추억과 관련된 간단한 
+									이야기를 함께 작성하면, TTC가 더 깊이 있는 경험을 준비할 수 있어요. 당신의 기억 
+									속 소중한 한 장면을 떠올리며 시작해보세요. </p>
+						</div>
+						<div class="two-line-wrapper" style="margin-top: 64px;">
+							<img src="/Users/choeseonghui/최성희/서울과기대/2025/3학년 1학기/웹퍼블리싱/중간과제/img_source/howto1.png" width="587px" height="363px">
+							<div>
+								<div class="step-example">
+									<p>
+										<strong>"1998년 여름, 초등학교 여름 방학"</strong><br>
+										어린 시절 친구들과 동네에서 물총 싸움 하던 기억이 떠오릅니다. 
+										<br>아이스크림을 나눠 먹으며 깔깔대던 그 시간이 그리워요.
+									</p>
+								</div>
+								<div class="step-example" style="margin-top: 24px;">
+									<p>
+										<strong>"1989년 겨울, 가족과 함께한 설날"</strong><br>
+										할머니 집에서 온 가족이 모여 떡국을 먹던 따뜻한 기억이에요. <br>
+										장작 타는 냄새와 웃음소리가 아직도 생생합니다.
+									</p>
+								</div>
+								<div class="step-example" style="margin-top: 24px;">
+									<p>
+										<strong>"2012년 여름, 친구들과의 제주도 여행"</strong><br>
+										대학교 친구들과 제주도에서 보낸 여름밤이에요.  <br>
+										바닷가에서 맥주를 마시며 별을 보던 그 순간이 다시 떠올라요.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				<div class="content" id="content2">
+					<div class="caption">
+						<h3>추억하고 싶은 장소를 떠올려주세요.</h3>
+						<p style="margin-top: 16px; text-align: justify;" class="lightyellow line-height">
+								두 번째 단계는 <strong>그 추억이 일어난 장소를 구체적으로 떠올리고 선택하는 과정</strong>이에요.
+								 할머니 집 부엌, 동네 놀이터, 첫 데이트를 했던 공원 등 기억 속 장소를 적어주세요. 장소와 관련된 
+								 세부적인 느낌—예를 들어, "부엌에서 풍기던 된장국 냄새"나 "공원의 낙엽 냄새"—를 함께 알려주시면 
+								 좋습니다. TTC는 이 정보를 바탕으로 그 장소의 분위기를 맛과 향으로 재현합니다. 그때를 기록한 
+								 사진이나 동영상이 있다면 함께 첨부해주세요.  </p>
+					</div>
+					<div class="two-line-wrapper" style="margin-top: 64px;">
+						<img src="/Users/choeseonghui/최성희/서울과기대/2025/3학년 1학기/웹퍼블리싱/중간과제/img_source/howto2.png" width="587px" height="363px">
+						<div>
+							<div class="step-example">
+								<p>
+									<strong>"경상북도 의성군 의성읍, 할머니 집 마루"</strong><br>
+									할머니 집 마루에서 온 가족이 둘러앉아 귤을 까먹던 곳이에요. 
+									<br>장작 타는 아궁이 냄새와 할머니가 끓여주신 따뜻한 수정과 향이 기억나요.
+								</p>
+							</div>
+							<div class="step-example" style="margin-top: 24px;">
+								<p>
+									<strong>"제주도, 함덕해수욕장"</strong><br>
+									친구들과 제주도 여행 중 갔던 한적한 해변이에요.<br>
+									바닷물 냄새와 멀리서 들리던 파도 소리, 모래에 묻은 소금 향이 기억에 남아요.
+								</p>
+							</div>
+							<div class="step-example" style="margin-top: 24px;">
+								<p>
+									<strong>"서울 마포구, 첫 직장 근처 카페"</strong><br>
+									첫 직장에서 힘들 때마다 들렀던 동네 카페예요. 갓 구운 크루아상 냄새와<br>
+									창가로 스며드는 햇살, 그리고 커피 향이 그때를 떠올리게 해요.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content" id="content3">
+					<div class="caption">
+						<h3>그리운 물건이 있다면 함께—</h3>
+						<p style="margin-top: 16px; text-align: justify;" class="lightyellow line-height">
+								마지막 단계는 <strong>TTC가 추억의 물건을 향수로서 구체화하는 과정</strong>이에요.
+								그 시절에 소중했던 물건—예를 들어, 첫사랑이 선물해준 낡은 MP3 플레이어나 친구들과 공원에서 날렸던 연—
+								을 떠올려보세요. 그 물건이 왜 중요했는지, 어떤 기억과 감정을 불러일으켰는지 자세히 적어주세요. TTC는
+								이 물건과 관련된 이야기를 바탕으로 더 생생한 맛과 향을 캡슐에 담아드립니다. </p>
+					</div>
+					<div class="two-line-wrapper" style="margin-top: 64px;">
+						<img src="/Users/choeseonghui/최성희/서울과기대/2025/3학년 1학기/웹퍼블리싱/중간과제/img_source/howto3.png" width="587px" height="363px">
+						<div>
+							<div class="step-example">
+								<p>
+									<strong>"첫사랑이 선물한 목걸이"</strong><br>
+									고등학교 때 첫사랑이 크리스마스에 선물해준 목걸이에요. 
+									<br> 함께 눈 쌓인 거리를 걷다 선물받은 그 기억이 생생해요.
+								</p>
+							</div>
+							<div class="step-example" style="margin-top: 24px;">
+								<p>
+									<strong>"대학 동아리에서 받은 스냅백"</strong><br>
+									대학교 힙합 동아리에서 공연 끝나고 선배들이 선물해준 검정 스냅백이에요.<br>
+									그걸 쓰고 무대에서 처음으로 랩했던 순간이 제 인생 최고의 기억이에요. 
+								</p>
+							</div>
+							<div class="step-example" style="margin-top: 24px;">
+								<p>
+									<strong>"아빠와 함께 만든 책상"</strong><br>
+									중학생 때 아빠와 함께 나무로 만든 작은 책상이에요. <br>
+									여름방학 동안 같이 톱질하고 망치질하며 완성했던 그 시간이 너무 소중해요.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section class="how-to-taste-5">
 			<div class="wrap">
-				<img src="" width="1216px" height="800px">
+				<img src="/Users/choeseonghui/최성희/서울과기대/2025/3학년 1학기/웹퍼블리싱/중간과제/img_source/howtotaste5.png" width="1216px" height="800px">
 			</div>
 		</section>
 
@@ -537,13 +322,13 @@
 			<div class="wrap align-center" >
 				<div>
 					<span>
-						<p class="content-text darknavy" style="padding-bottom: 36px">
+						<p class="content-text darknavy fade-up" style="padding-bottom: 36px">
 							그때 그 시절의 맛과 향기를 캡슐 한 알만으로 생생하게.
 						</p>
 					</span>
 					<span>
-						<p class="darknavy line-height">
-							세상 어떤 사람들을 물어봐도 똑같은 기억을 가지고 있는 사람은 없습니다. <br>
+						<p class="darknavy line-height fade-up">
+							세상 어떤 사람들에게 물어봐도 똑같은 기억을 가지고 있는 사람은 없습니다. <br>
 							TTC는 당신의 노스텔직-메모리를 기반으로 당신만이 가지고 있는,<br>
 							유일무이한 기억을 다시금 감각할 수 있게 합니다. 
 						</p>
@@ -552,15 +337,15 @@
 
 				<div style="margin-top: 256px">
 					<span>
-						<p class="content-text darknavy" style="margin-bottom: 64px;">
+						<p class="content-text darknavy fade-up" style="margin-bottom: 64px;">
 							주목할 만한, <br>
 							TTC만의 특별한 레시피
 						</p>
 					</span>
-					<img src="" height="700px" width="400px" style="margin:64px">
+					<img src="/Users/choeseonghui/최성희/서울과기대/2025/3학년 1학기/웹퍼블리싱/중간과제/img_source/pill.png" height="700px" width="400px" style="margin:64px">
 				</div>
 				<span class="text-position-1">
-					<p class="align-right darknavy">
+					<p class="align-right darknavy line-height fade-up">
 						<strong>
 							노스탤지아 엑스 (Nostalgia X) 200mg
 						</strong>
@@ -573,7 +358,7 @@
 					</p>
 				</span>
 				<span class="text-position-2">
-					<p class="align-right darknavy">
+					<p class="align-right darknavy line-height fade-up">
 						<strong>
 							타임 에센스 (Time Essence) 160mg
 						</strong>
@@ -585,16 +370,15 @@
 					</p>
 				</span>
 				<span class="text-position-3">
-					<p class="align-left darknavy">
+					<p class="align-left darknavy line-height fade-up">
 						<strong>
 							메모리 플레어 (Memory Flare) 140mg
 						</strong>
 						<br>
-						기억을 활성화하는 자극적 향 성분과 미세 탄산 성분&#40;탄산<br>
-						칼슘 기반&#41;이 함유되어있어요. 커스텀된 향과 결합해 기억<br>
-						회상을 극대화하며, 탄산 기포로 향을 빠르게 확산시켜 감<br>
-						각을 깨워요. "불꽃" 효과로 향을 순간적으로 퍼뜨려, 추억<br>
-						을 더 생생하게 떠오르게 합니다.
+						기억을 활성화하는 자극적 향 성분과 미세 탄산 성분&#40;탄산
+						칼슘 기반&#41;이 함유되어있어요. 커스텀된 향과 결합해 기억
+						회상을 극대화하며, 탄산 기포로 향을 빠르게 확산시켜 감
+						각을 깨워요. "불꽃" 효과로 향을 순간적으로 퍼뜨려, 추억을 더 생생하게 떠오르게 합니다.
 					</p>
 				</span>
 
@@ -607,15 +391,15 @@
 			</div>
 		</section>
 
-		<section class="product">
+		<section class="product" id="product">
 			<div class="wrap">
-				<h2 class="navy">Product.</h2>
-				<hr class="navy">
-				<div class="two-line-wrapper" style="margin-top: 128px;">
+				<h2 class="navy fade-up">Product.</h2>
+				<hr class="navy fade-up">
+				<div class="two-line-wrapper fade-up" style="margin-top: 128px;">
 					<div height="600px" width="auto">
 						<p class="text-mid navy">맛보기</p>
-						<hr class="navy">
-						<p class="navy">기본적으로 제공되는 3알의 캡슐입니다.<br>
+						<hr class="navy hr-light">
+						<p class="navy line-height">기본적으로 제공되는 3알의 캡슐입니다.<br>
 							TTC가 엄선한, 향수를 불러일으키기에 충분<br>
 							한 시간대들을 한 번 맛보시는 건 어떨까요?
 						</p>
@@ -629,37 +413,133 @@
 				
 					<div>
 						<p class="text-mid navy">What's Included</p>
-						<hr class="navy">
+						<hr class="navy hr-light">
 							<div class="three-line-wrapper">
 								<div>
-									<img src="" class="product-img" style="margin-bottom: 36px;"><br>
+									<img src="/Users/choeseonghui/최성희/서울과기대/2025/3학년 1학기/웹퍼블리싱/중간과제/img_source/sample1.png" class="product-img" style="margin-bottom: 36px;"><br>
 									<span class="redbrown">
 										<strong>1980년대, 겨울 저녁</strong>
 									</span>
-									<p style="margin-top: 24px;">
-										<strong>할머니의 된장국 냄새와 장작 타는 따뜻함</strong>
+									<p style="margin-top: 16px;" class="line-height">
+										<strong>할머니의 된장국 냄새와<br> 장작 타는 따뜻함</strong><br>
 										해가 일찍 진 겨울 저녁, 할머니가 부엌에서 끓이던 된장국 냄새가 방 안까지 퍼지던 그때. 장작이 타닥거리며 불을 피운 화롯불 옆에서 손을 녹이며, 창문 너머로 보이던 김이 서린 유리창과 희미한 눈발.
 									</p>
 								</div>
 								<div>
-									<img src="" class="product-img" style="margin-bottom: 36px;"><br>
+									<img src="/Users/choeseonghui/최성희/서울과기대/2025/3학년 1학기/웹퍼블리싱/중간과제/img_source/sample2.png" class="product-img" style="margin-bottom: 36px;"><br>
 									<span class="redbrown">
-										<strong>1980년대, 겨울 저녁</strong>
+										<strong>1990년대, 여름 방학</strong>
 									</span>
-									<p style="margin-top: 24px;">
-										<strong>할머니의 된장국 냄새와 장작 타는 따뜻함</strong>
-										해가 일찍 진 겨울 저녁, 할머니가 부엌에서 끓이던 된장국 냄새가 방 안까지 퍼지던 그때. 장작이 타닥거리며 불을 피운 화롯불 옆에서 손을 녹이며, 창문 너머로 보이던 김이 서린 유리창과 희미한 눈발.
-									</p>
+									<p style="margin-top: 16px;" class="line-height">
+										<strong>아이스크림 녹는 맛과 따가운 햇살 향, <br>친구들과의 웃음소리</strong><br>
+										해질녘까지 동네 골목을 뛰어다니다 친구들과 편의점에서 사 나눠 먹던 바닐라 아이스크림, 손에 끈적하게 녹아내리던 그 맛. 따가운 햇살이 아스팔트에서 반사되고, 멀리서 들려오던 매미 소리와 함께 웃음이 터지던 그 순간.									</p>
 								</div>
 								<div>
-									<img src="" class="product-img" style="margin-bottom: 36px;"><br>
+									<img src="/Users/choeseonghui/최성희/서울과기대/2025/3학년 1학기/웹퍼블리싱/중간과제/img_source/sample3.png" class="product-img" style="margin-bottom: 36px;"><br>
 									<span class="redbrown">
 										<strong>1980년대, 겨울 저녁</strong>
 									</span>
-									<p style="margin-top: 24px;">
-										<strong>할머니의 된장국 냄새와 장작 타는 따뜻함</strong>
-										해가 일찍 진 겨울 저녁, 할머니가 부엌에서 끓이던 된장국 냄새가 방 안까지 퍼지던 그때. 장작이 타닥거리며 불을 피운 화롯불 옆에서 손을 녹이며, 창문 너머로 보이던 김이 서린 유리창과 희미한 눈발.
-									</p>
+									<p style="margin-top: 16px;" class="line-height">
+										<strong>축축한 장갑의 촉감과<br>따뜻하고 달달했던 핫초코의 기억</strong><br>
+										교복 차림으로 학교에서 돌아오다 맞이한 첫눈, 집에 들어와 축축한 장갑을 벗고 엄마가 건네준 따뜻한 핫초코를 홀짝이던 순간. 창밖으로 하얗게 쌓이는 눈을 보며 TV에서 흘러나오던 드라마 소리가 아련히 들리던 그날.									</p>
+								</div>
+							</div>
+					</div>
+				</div>
+
+				<div class="two-line-wrapper fade-up" style="margin-top: 256px;">
+					<div height="600px" width="auto" class="span-block2">
+						<p class="text-mid navy">개별 구매</p>
+						<hr class="navy hr-light">
+						<p class="navy line-height">TTC가 제공하는 ‘타임캡슐’을 맛보셨다면, <br>
+							이번에는 여러분의 추억을 맛볼 차례입니다. <br>
+							원하는 시간대, 원하는 장소의 추억을<br>
+							되새겨보세요.
+						</p>
+
+						<div class="button">
+						<p class="yellow">구매하기</p>
+						</div>
+					</div>
+					<div>
+						<p class="text-mid navy">What's Included</p>
+						<hr class="navy hr-light">
+							<div class="three-line-wrapper">
+								<div>
+									<img src="/Users/choeseonghui/최성희/서울과기대/2025/3학년 1학기/웹퍼블리싱/중간과제/img_source/product1.png" class="product-img" style="margin-bottom: 36px;"><br>
+									<span class="redbrown">
+										<strong>Custom-Capsule</strong>
+									</span>
+									<p style="margin-top: 16px;" class="line-height">
+										<strong>떠올리고 싶은 추억이 있나요?
+											<br>캡슐 12정 | 49,900원</strong><br>
+										추억하고 싶은 시간과 장소를 선택하고, 그리운 물건들을 함께 떠올려 이야기 해주세요. TTC가 추억을 다시 떠올릴 수 있는 향수 가득한 타임 캡슐을, 마음을 담아 보내드립니다. 									</p>
+								</div>
+								<div>
+									<img src="/Users/choeseonghui/최성희/서울과기대/2025/3학년 1학기/웹퍼블리싱/중간과제/img_source/product2.png" class="product-img" style="margin-bottom: 36px;"><br>
+									<span class="redbrown">
+										<strong>Additional Option 1</strong>
+									</span>
+									<p style="margin-top: 16px;" class="line-height">
+										<strong>몰입감 있는 노스텔지어를 위해—<br>디테일 업그레이드 | 19,900원</strong><br>
+										너무너무 그리워서 미칠 것 같은 추억을 더 자세히 곱씹어보고 싶다면, 디테일을 업그레이드 해보세요. 그 순간의 맛과 향기, 그리고 환경을 보다 생생하게 추억할 수 있게, TTC가 도와드리겠습니다.									</p>
+								</div>
+								<div>
+									<img src="/Users/choeseonghui/최성희/서울과기대/2025/3학년 1학기/웹퍼블리싱/중간과제/img_source/product3.png" class="product-img" style="margin-bottom: 36px;"><br>
+									<span class="redbrown">
+										<strong>Additional Option 2</strong>
+									</span>
+									<p style="margin-top: 16px;" class="line-height">
+										<strong>감각할 수 있는 노스텔직 오브젝트—<br>추억 키트 | 가격 문의</strong><br>
+										잠깐의 맛과 향기로 지나간 날을 추억하는 것도 좋지만, 실제로 보고 만져보고 싶을 때도 있죠. 최대한 향수를 끌어올릴 수 있도록 하는 오브젝트들을 재현하여 담아드립니다. 									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				<div class="two-line-wrapper fade-up" style="margin-top: 256px;">
+					<div height="600px" width="auto">
+						<p class="text-mid navy">선물패키지</p>
+						<hr class="navy hr-light">
+						<p class="navy line-height">소중한 추억을 소중한 사람과 나누고 싶지 <br>
+							않으신가요? 그럴 땐, TTC가 정성을 담아 <br>
+							구성한 이 선물 패키지가 딱이에요.
+						</p>
+
+						<div class="button">
+						<p class="yellow">구매하기</p>
+					</div>
+				</div>
+				
+				<div>
+					<div>
+						<p class="text-mid navy">What's Included</p>
+						<hr class="navy hr-light">
+							<div>
+								<img src="/Users/choeseonghui/최성희/서울과기대/2025/3학년 1학기/웹퍼블리싱/중간과제/img_source/product4.png" class="product-img-2" style="margin-bottom: 36px;"><br>
+								<div class="three-line-wrapper">
+									<div>
+										<span class="redbrown">
+											<strong>Nostalgia-Gift Box</strong>
+										</span>
+										<p style="margin-top: 16px;" class="line-height span-block2">
+											<strong>그때의 순간을 선물하세요 <br>
+												커스텀 캡슐 3종 세트, 향초, 추억 편지, <br>
+												 패키지 박스<br>
+												| 199,000원
+											</strong>
+										</p>
+									</div>
+									<div>
+										<p style="margin-top: 36px;" class="line-height span-block2">
+											해가 일찍 진 겨울 저녁, 할머니가 부엌에서 끓이던 된장국 냄새가 방 안까지 퍼지던 그때. 장작이 타닥거리며 불을 피운 화롯불 옆에서 손을 녹이며, 창문 너머로 보이던 김이 서린 유리창과 희미한 눈발.
+										</p>
+									</div>
+									<div>
+										<p style="margin-top: 36px;" class="line-height span-block2">
+											해가 일찍 진 겨울 저녁, 할머니가 부엌에서 끓이던 된장국 냄새가 방 안까지 퍼지던 그때. 장작이 타닥거리며 불을 피운 화롯불 옆에서 손을 녹이며, 창문 너머로 보이던 김이 서린 유리창과 희미한 눈발.
+										</p>
+									</div>
 								</div>
 							</div>
 					</div>
@@ -667,10 +547,158 @@
 			</div>
 		</section>
 		
+		<section class="details" id="details">
+			<div class="wrap">
+				<h2 class="navy fade-up">Details.</h2>
+				<hr class="navy fade-up">
+
+				<div class="two-line-wrapper fade-up" style="margin-top: 128px;">
+					<div height="600px" width="auto">
+						<p class="text-mid navy">보증된 추억</p>
+						<hr class="navy hr-light">
+						<p class="navy line-height span-block2">모든 알약은 엄격한 품질 관리 기준에 따라 제조됩니다.
+							국내·외 인증된 시설에서 생산되어 안전성과 안정성을 보장합니다.<br>
+							한 알 한 알, 당신의 소중한 기억을 위해 정직하게 만들었습니다.
+						</p>
+					</div>
+					<div class="span-block3">
+						<p class="text-mid navy">품질 보증</p>	
+						<hr class="navy hr-light">
+						<div>
+							<p class="redbrown" style="margin-top: 36px;"><strong>[MHRL: 기억과학건강연구소]</strong></p>
+							<p class="navy line-height" style="margin-top: 16px;">인간의 감정 회로와 기억 회복 작용을 기반으로 개발된 제품만을 승인합니다.
+								MHRL은 국내 최초로 '감성 안정도'를 과학적으로 수치화하는 프로토콜을 보유하고 있으며,
+								모든 알약은 3단계 심리반응 테스트와 생리적 안정성 검사를 통과해야 합니다.
+								과거 회상 유발 효과는 실제 임상 데이터를 통해 정량 검증됩니다.
+								연구소는 뇌-감정 인터페이스 기술을 활용해, 기억의 질과 지속시간을 평가합니다.
+								우리는 단순한 추억이 아니라, 감정적으로 완성도 높은 회상을 위한 품질을 보증합니다.
+							</p>
+						</div>
+						<div>
+							<p class="redbrown" style="margin-top: 36px;"><strong>[NQA: 감각기억 품질인증청]</strong></p>
+							<p class="navy line-height" style="margin-top: 16px;">NQA는 제품이 불러오는 감각적 기억(시각, 청각, 후각 등)의 일관성과 정밀도를 기준으로 인증합니다.
+								모든 알약은 최소 7가지 과거 자극 요소(소리, 장면, 감촉 등)에 대한 반응률을 측정하여 검증됩니다.
+								인증 대상은 기억 왜곡 없이 따뜻하고 명확한 회상이 유도되는 제품에 한정됩니다.
+								향수 유발 알약은 ‘정서적 진위감(EAE)’ 지수를 기준으로 평가합니다.
+								유럽 기억유발 가이드라인(EMTR)에 기반한 글로벌 품질기준을 준수합니다.
+								NQA 인증 마크는, 진짜 같은 과거의 순간으로 안전하게 안내받을 수 있다는 보증입니다.
+							</p>
+						</div>
+						<div>
+							<p class="redbrown" style="margin-top: 36px;"><strong>[T.H.A.M.: 시간기억 응용의학협회]</strong></p>
+							<p class="navy line-height" style="margin-top: 16px;">THAM은 '시간 기반 정서 치료(Time-based Emotional Therapy)'를 연구하는 국제 의학 협회입니다.
+								제품이 단순한 회상을 넘어, 감정적 회복과 연결되도록 설계되었는지 여부를 중점 심사합니다.
+								알약의 작용시간, 반응강도, 회상 지속력을 전문 분석 도구로 검증합니다.
+								THAM 인증을 받은 제품은 기억의 안전성, 정서 환기 효과, 지속가능성에서 모두 기준을 통과한 제품입니다.
+								각 제품은 임상심리사 및 신경학 박사의 2중 리뷰를 거쳐 최종 승인됩니다.
+								당신의 기억을 치료처럼 사용할 수 있도록, THAM이 그 기준을 지킵니다.
+							</p>
+						</div>
+
+						<div class="span-block3" style="margin-top: 64px;">
+							<p class="text-mid navy">품질 보증</p>	
+							<hr class="navy hr-light">
+							<p class="navy line-height service-terms" style="margin-top: 16px;">
+								병 단위 / 구성: 커스텀 캡슐 6개 (각 500mg, 병 포장), 향초 1개 (10ml, 30시간 지속), 추억 편지 1통, 패키지 박스 / 주요 성분(캡슐 1개 기준): 노스탤지아 엑스 
+								(Nostalgia X) 200mg, 타임 에센스 (Time Essence) 160mg, 메모리 플레어 (MemoryFlare) 140mg, 기타 성분 (감정을 자극하는 천연 향료와 시간의 맛을 추출한
+								 에센스, 고객의 커스텀 요청에 따라 조합되어 추억 재현 효과 강화) / 유의사항: 위 성분 함량은 캡슐 1알(500mg) 기준, 캡슐의 형태는 주문자의 요청에 따라 달라질
+								 수 있으나 용량은 항상 일정하게 유지, 직사광선을 피하고 서늘한 곳에 보관하여 품질 유지, 알레르기 반응이 우려되면 사용 전 고객 센터로 문의 / 보관법: 병을 직사광선이
+								 닿지 않는 서늘한 곳에 보관, 어린이 손이 닿지 않도록 주의 / 사용법: 병에서 캡슐 1개를 꺼내 열어 물과 함께 섭취/ 제조자: TTC (주) / 소비자 상담실: 1234-5678/
+								 제조일자: 구매 시 확인 (YYYY.MM.DD 형식) / 유통기한: 제조일로부터 1년 / 원산지: 대한민국 / 웹사이트: www.tasteoftimecapsule.com / 구매 및 반품: 모든 
+								제품은 주문 제작으로 반품은 제품 수령 후 7일 이내 가능, 병이 개봉되지 않은 상태여야 하며 반품 비용은 고객 부담 / 배송: 주문 후 3-5일 소요, 배송 중 병 파손 시 고객 
+								센터로 연락 / 개인정보: TTC는 고객의 개인정보를 안전하게 보호하며 추억 제작 목적으로만 사용, 자세한 내용은 개인정보 처리방침 확인 요망.<br>
+								<span class="redbrown">과다 복용 시 발생하는 우울증, 또는 잊고 싶었던 기억의 역류 등의 정신착란 증상에 대해서 TTC가 책임지지 않음. <br>
+								과도한 추억 탐닉은 현실과 과거의 경계를 흐릴 수 있습니다. 정신분열 증상이나 환각이 보고된 사례에 대해 저희는 책임지지 않음.<br>
+								과다 섭취 시 기억 과부하로 인한 불안 장애가 나타날 수 있으며, 이는 보증 대상이 아님.<br>
+								하루 세 캡슐 이상은 금물임. 과다 복용으로 인한 시간 감각 상실, 정체성 혼란 등에 대해 TTC는 일절 관여하지 않으므로 권장량(하루 최대 2알)을 지켜 섭취 요망.</span>
+							</p>
+						</div>
+						
+					</div>
+				</div>
+
+			</div>
+			
+
+		</section>
 	</section>
 
 	<footer>
-
+		<section id="contact">
+		<div class="wrap">
+			<div class="two-line-wrapper">
+				<div class="span-block2">
+					
+				</div>
+				<div class="ellipse" style="background-color: #E59E2C;"><h3 style="color: #2f333a;">TTC</h3>
+				
+				</div>
+			
+				<div>
+						<div class="three-line-wrapper">
+							<div class="span-block2">
+								<span class="yellow">
+									<strong>Information</strong>
+								</span>
+								<br>
+								<p style="margin-top: 16px;" class="line-height yellow">
+									Company: TTC<br>
+									CEO: Lorem Ipsum<br>
+									Personal info manager: Lorem Ipsum<br>
+									Company Reg.no: 333-33-33333 <br>
+									Network Reg.no: 제A00-000000-0000<br>
+									Copyright © TTC. All rights reserved. <br>
+									Designed by CHG<br>
+								</p>
+							</div>
+							<div class="span-block2">
+								<span class="yellow">
+									<strong>Contact Us</strong>
+								</span>
+								<br>
+								<p style="margin-top: 16px;" class="line-height yellow">
+									0000<br>
+									Dongil-ro, Nowon-gu, Seoul-si,<br>
+									Republic of Korea<br>
+									010-0000-0000<br>
+									<br>
+									23:00-23:30<br>
+									SAT, SUN, Holyday Closed<br>
+									Officialcontact.TTC@gmail.com
+								</p>
+							</div>
+							<div class="span-block2">								
+								<p class="line-height yellow align-right">
+									<strong>About Us.</strong><br>
+									&nbsp;<br>
+									<strong>Product.</strong><br>
+									&nbsp;<br>
+									<strong>Order.</strong><br>
+									&nbsp;<br>
+									<strong>Details.</strong><br>
+									&nbsp;<br>
+									<strong>Contact.</strong><br>
+									
+								</p>
+							</div>
+						</div>
+				</div>
+			</div>
+		</section>
 	</footer>
+
+	<script>
+		const observer = new IntersectionObserver((entries) => {
+		  entries.forEach(entry => {
+			if (entry.isIntersecting) {
+			  entry.target.classList.add('show');
+			}
+		  });
+		});
+
+		document.querySelectorAll('.fade-up, .fade-up-left, .fade-up-right, .fade-in')
+		  .forEach(el => observer.observe(el));
+	  </script>
+	  
 </body>
 </html>
